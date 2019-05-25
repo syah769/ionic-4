@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Add Customer</ion-title>
+      <ion-buttons slot="primary">
+        <ion-back-button text="Back" icon="" color="tertiary" fill="outline"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating"> Name </ion-label>
+      <ion-input type="text" [(ngModel)]="name_customer"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating"> Description </ion-label>
+      <ion-textarea [(ngModel)]="desc_customer"></ion-textarea>
+    </ion-item>
+  
+    <ion-button expand="block" padding color="tertiary" *ngIf="!id" (click)="createdProses()" fill="outline">Submit</ion-button>
+    <ion-button expand="block" padding color="tertiary" *ngIf="id>=1" (click)="updateProses()" fill="outline">Update</ion-button>
+  
+  </ion-content>
+  
