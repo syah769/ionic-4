@@ -1,5 +1,5 @@
 # ionic-4
-Ionic 4 crud and login using MySQL php
+Ionic 4 crud and login using MySQL (PHP)
 
 Clone projek ini dan pindahkan ke dalam htdocs.
 Cari folder login dan install npm. 
